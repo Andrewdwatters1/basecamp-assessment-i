@@ -35,7 +35,7 @@ var age = 18;
 var canDrive;
 
 function canDrive(age) {
-  if(age > 16) {
+    if(age > 16) {
     return true;
   } return false;
 }
@@ -56,8 +56,14 @@ var responseCreator = function(param) {
 
 // #9 Create a function called 'sum' that takes in one parameter and returns the sum of that parameter added it itself.
 
-// CODE HERE
+// no
+function sum(parameter) {
+  return parameter + parameter;
+  }
 
 // #10 Create a function called 'greeter' that takes in two parameters, name and number. Have 'greeter' return a string that says something like this 'Hi! I am Bryan and I am 28 years old" but with the appropriate values..
 
-// CODE HERE
+// yes
+function greeter(name, number) {
+  return "Hi! I am " + name + " and I am " + number + " years old.";
+}
