@@ -23,14 +23,22 @@ var me = "My name is " + myName + " and my favorite number is " + faveNum;
 //yes
 trueFaveNum = faveNum === 7;
 
-// #6 Create a new variable called notHakeem. Using the previously created myName variable, test that your name DOES NOT equal the string 'Hakeem Olajuwon'. If your name does happen to be Hakeem Olajuwon, test against 'Karl Malone'
+/* #6 Create a new variable called notHakeem. Using the previously created myName variable, 
+test that your name DOES NOT equal the string 'Hakeem Olajuwon'. If your name does happen to be Hakeem Olajuwon, 
+test against 'Karl Malone' */
 
-//yes
-var notHakeem = myName !== 'Hakeem Olajuwon';
+function notHakeemOrKarl(myName) {
+  var notHakeem = myName !== 'Hakeem Olajuwon'; 
+  if(myName === 'Hakeem Olajuwon') {
+  notHakeem = myName !== 'Karl Malone'
+}
+return notHakeem;
+}
 
 // #7 Create an if statement that checks the age variable below. If age is greater than 16, then set canDrive to true otherwise set canDrive to false. The canDrive variable will be set by the unit test so do not adjust it.
 
 // no
+
 var age = 18;
 var canDrive;
 
